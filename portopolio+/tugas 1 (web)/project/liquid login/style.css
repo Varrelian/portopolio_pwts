@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: spaxce-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.navbar a { 
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffcc;
+}
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #eff0f4;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+}
+
+.container .drop {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),  25px 35px 20px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    border-radius: 62% 48% 23% 67% / 38% 41% 35% 62%;
+}
+
+.container .drop:hover {
+    border-radius: 50%;
+}
+
+.container .drop::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.container .drop::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.container .drop .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.container .drop .content h2 {
+    position: relative;
+    color:#333;
+    font-size: 1.5em;
+}
+
+.container .drop .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .drop .content form .inputBox {
+    position: relative;
+    width: 255px;
+   
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+     inset -2px -5px 10px rgba(255, 255, 255, 1),
+       15px 15px 10px rgba(0, 0, 0, 0.05),
+         15px 10px 15px rgba(0, 0, 0, 0.025); 
+    border-radius: 25px;
+}
+
+.container .drop .content form .inputBox::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+
+.container .drop .content form .inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+.container .drop .content form .inputBox input 
+[type="submit"] {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.container .drop .content form .inputBox:last-child {
+    background:#ff0f5b;
+    width: 120px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+     15px 15px 10px rgba(0, 0, 0, 0.05),
+     15px 10px 15px rgba(0, 0, 0, 0.025); 
+     transition: 0.5s;
+}
+
+.container .drop .content form .inputBox:last-child:hover {
+    width: 150px;
+
+}
